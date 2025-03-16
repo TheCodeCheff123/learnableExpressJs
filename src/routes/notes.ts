@@ -14,7 +14,8 @@ router.get('/categories/:categoryId', (req, res) => {
 });
 
 // Update a note
-router.put('/:id', validateNote, (req, res) => {
+router.put('/:id', validateNote, (req, res) => { 
+  //please i'm getting an error here help me!
   const noteId = req.params.id;
   const updatedNote: Note = req.body;
   const index = notes.findIndex(note => note.id === noteId);
