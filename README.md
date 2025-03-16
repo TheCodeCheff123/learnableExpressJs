@@ -14,10 +14,6 @@ This is a simple note-taking API built with Express.js and TypeScript. It includ
 2. **Type Safety**: Uses TypeScript for type checking and validation.
 3. **Validation**: Custom middleware validates request bodies using `zod`.
 4. **Logging**: A logging middleware tracks all API requests.
-5. **Endpoints**:
-   - `GET /api/notes/categories/:categoryId`: Get notes by category ID.
-   - `PUT /api/notes/:id`: Update a note.
-
 ---
 
 ## Prerequisites
@@ -31,7 +27,7 @@ This is a simple note-taking API built with Express.js and TypeScript. It includ
 1. Clone the repository:
    ```bash
    git clone repo link
-   cd note-taking-api
+   cd learnableExpressJs
    ```
 
 2. Install dependencies:
