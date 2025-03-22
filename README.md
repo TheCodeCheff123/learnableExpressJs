@@ -49,7 +49,16 @@ This is a simple note-taking API built with Express.js and TypeScript. It includ
    ```bash
    npm start
    ```
+5. Endpoints
+   A. Get test notes
+   ```bash
+   https://note-taker-anco.onrender.com/api/notes
+   ```
 
+   B. Test the code
+   ```bash
+   https://note-taker-anco.onrender.com/api/
+   ```
 ---
 
 ## Technologies Used
