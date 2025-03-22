@@ -4,7 +4,25 @@ import { validateNote } from '../middleware/validation';
 import { logger } from '../middleware/logging';
 
 const router = express.Router();
-const notes: Note[] = [];
+const notes: Note[] = [{
+  id: '1',
+  title: 'First Note',
+  content: 'This is the content of the first note.',
+  category: { id: '101', name: 'Personal' }
+},
+{
+  id: '2',
+  title: 'Second Note',
+  content: 'This is the content of the second note.',
+  category: { id: '102', name: 'Work' }
+},
+{
+  id: '3',
+  title: 'Third Note',
+  content: 'This is the content of the third note.',
+  category: { id: '101', name: 'Personal' }
+}];
+
 
 // Get notes by category ID
 router.get('/categories/:categoryId', (req, res) => {
